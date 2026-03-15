@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 230 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 25% 10%;
+
+    /* Royal Blue */
+    --primary: 234 68% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Lime Green */
+    --secondary: 72 78% 55%;
+    --secondary-foreground: 230 25% 10%;
+
+    --muted: 230 20% 95%;
+    --muted-foreground: 230 10% 45%;
+
+    --accent: 280 50% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 20% 90%;
+    --input: 230 20% 90%;
+    --ring: 234 68% 55%;
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --lime: 72 78% 55%;
+    --royal: 234 68% 55%;
+    --lavender: 270 60% 82%;
+    --dark: 230 25% 10%;
+
+    --font-display: 'Oswald', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 230 25% 10%;
+    --foreground: 0 0% 98%;
+    --card: 230 25% 14%;
+    --card-foreground: 0 0% 98%;
+    --popover: 230 25% 14%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 72 78% 55%;
+    --primary-foreground: 230 25% 10%;
+    --secondary: 234 68% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 230 20% 18%;
+    --muted-foreground: 230 10% 65%;
+    --accent: 280 50% 70%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 20% 20%;
+    --input: 230 20% 20%;
+    --ring: 72 78% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--lime)), hsl(var(--royal)));
+  }
+  .bg-royal {
+    background-color: hsl(var(--royal));
+  }
+  .bg-lime {
+    background-color: hsl(var(--lime));
+  }
+  .bg-dark {
+    background-color: hsl(var(--dark));
+  }
+  .text-lime {
+    color: hsl(var(--lime));
+  }
+  .text-royal {
+    color: hsl(var(--royal));
+  }
+  .text-lavender {
+    color: hsl(var(--lavender));
+  }
+  .border-lime {
+    border-color: hsl(var(--lime));
+  }
+  .border-royal {
+    border-color: hsl(var(--royal));
+  }
+}
