@@ -22,7 +22,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="relative py-24 bg-lime overflow-hidden">
+    <section id = "beneficios" className="relative py-24 bg-lime overflow-hidden">
       {/* AJUSTE: Aumentamos a opacidade de 10 para 30 ou 40.
          ADICIONADO: mix-blend-multiply para a textura reagir com o verde.
       */}
