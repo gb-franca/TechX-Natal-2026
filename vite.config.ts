@@ -11,6 +11,8 @@ export default defineConfig(({ mode }) => ({
     hmr: {
       overlay: false,
     },
+
+    base: '/techx-natal-26/'
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {

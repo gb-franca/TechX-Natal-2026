@@ -10,7 +10,7 @@ const Sponsors = () => {
   const logos = [csImg, iePuzzelers, ieUfrn, ieYoungProfession, nanoMentoring];
 
   return (
-    <footer className="bg-black py-20 overflow-hidden">
+    <footer id = "parceiros" className="bg-black py-20 overflow-hidden">
       <div className="container max-w-6xl mx-auto px-4">
         
         {/* Título */}
