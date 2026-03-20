@@ -16,7 +16,7 @@ const benefits = [
   {
     icon: Coffee,
     title: "Alimentação",
-    description: "Coffee break e almoço inclusos durante os dois dias de evento para todos os participantes.",
+    description: "Coffee break em ambos os dias e almoço incluso exclusivamente no segundo dia de evento.",
   },
 ];
 
